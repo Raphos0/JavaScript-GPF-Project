@@ -1,0 +1,15 @@
+h1{color:rgb(138, 2, 2); text-align: center;}
+h2{color:rgb(138, 2, 2); text-align: center;}
+h3{color:rgb(138, 2, 2); text-align: center;}
+h4{color:rgb(138, 2, 2); text-align: center;}
+
+p {
+    font-family: 'Sovngarde';
+    text-align: right;
+
+}
+
+div.buttons{
+    font-family: 'Sovngarde';
+    color:rgb(138, 2, 2);
+}
