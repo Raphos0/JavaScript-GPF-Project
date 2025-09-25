@@ -11,5 +11,23 @@ p {
 
 div.buttons{
     font-family: 'Sovngarde';
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: progress;
+    text-align: center;
+    outline: none;
     color:rgb(138, 2, 2);
+    background-color: black;
+    border-style: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+div.buttons:hover{
+    background-color: aqua;
+}
+div.buttons:active{
+    background-color: blueviolet;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
