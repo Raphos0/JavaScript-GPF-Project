@@ -9,7 +9,7 @@ p {
 
 }
 
-div.buttons{
+div.button{
     font-family: 'Sovngarde';
     display: inline-block;
     padding: 15px 25px;
@@ -23,10 +23,10 @@ div.buttons{
     border-radius: 15px;
     box-shadow: 0 9px #999;
 }
-div.buttons:hover{
-    background-color: aqua;
+div.button:hover{
+    background-color: rgb(238, 255, 0);
 }
-div.buttons:active{
+div.button:active{
     background-color: blueviolet;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
