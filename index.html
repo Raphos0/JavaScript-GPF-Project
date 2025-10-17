@@ -1,113 +1,17 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-    <head>
-        <title>
-            JSGF Week 5 Javascript Fundamentals Continuation
-        </title>
-        <script type = "text/javascript" src="JS/week5.js"></script>
-    </head>
-    <body onload="initialise()">
-        <p style="font-size: 12; font-family: Sovngarde;">waow good lecture W derek</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WebGL Demo</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"
+      integrity="sha512-zhHQR0/H5SEBL3Wn6yYSaTTZej12z0hVZKOv3TwCUXT1z5qeqGcXJLLrbERYRScEDDpYIJhPC1fk31gqR783iQ=="
+      crossorigin="anonymous"
+      defer></script>
+    <script src="JS/webgl-demo.js" type="module"></script>
+  </head>
 
-        <!-- ==== JAVASCRIPT FUNDAMENTALS CONTINUATION ==== -->
-        <!-- ALERT - Task 5 -->
-        <!-- <p id="printHere">bottom text</p> -->
-
-        <!-- Scenario 1 - Task 6 -->
-         <h1>Shopping Calc</h1>
-         <form action="">
-            <fieldset>
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price (in £)</th>
-                    </tr>
-                    <tr>
-                        <td>6 Apples</td>
-                        <td><input type="number" name="entry" id="applesCost" value="2.00"></td>
-                    </tr>
-                    <tr>
-                        <td>Grapes</td>
-                        <td><input type="number" name="entry" id="grapesCost" value="3.00"></td>
-                    </tr>
-                    <tr>
-                        <td>12 Oranges</td>
-                        <td><input type="number" name="entry" id="orangesCost" value="3.00"></td>
-                    </tr>
-                </table>
-                <p> Discount 25% off !!11!!1</p>
-                <input type="number" name="discount" id="discountAmnt" value="25">
-                <br><br>
-                <input type="button" value="Calculate" onclick = "totup(this.form)">
-            </fieldset>
-         </form>
-         <p style = "font-size: 16;">Total Cost: <span id="total"></span></p>
-
-         <!-- Scenario 2 - Task 7 -->
-          <h1>Shopping Calc 2</h1>
-         <form action="">
-            <fieldset>
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price (in £)</th>
-                    </tr>
-                    <tr>
-                        <td>Milk</td>
-                        <td><input type="number" name="entry" id="milkCost" value="0.90"></td>
-                    </tr>
-                    <tr>
-                        <td>Bread</td>
-                        <td><input type="number" name="entry" id="breadCost" value="0.85"></td>
-                    </tr>
-                    <tr>
-                        <td>Cold Meat</td>
-                        <td><input type="number" name="entry" id="coldMeatCost" value="1.75"></td>
-                    </tr>
-                    <tr>
-                        <td>Eggs</td>
-                        <td><input type="number" name="entry" id="eggsCost" value="1.10"></td>
-                    </tr>
-                    <tr>
-                        <td>Cake</td>
-                        <td><input type="number" name="entry" id="cakeCost" value="1.50"></td>
-                    </tr>
-                    <tr>
-                        <td>Carrots</td>
-                        <td><input type="number" name="entry" id="carrotsCost" value="0.70"></td>
-                    </tr>
-                    <tr>
-                        <td>Potatoes</td>
-                        <td><input type="number" name="entry" id="potatoesCost" value="1.50"></td>
-                    </tr>
-                    <tr>
-                        <td>Cheese</td>
-                        <td><input type="number" name="entry" id="cheeseCost" value="2.60"></td>
-                    </tr>
-                    <tr>
-                        <td>Fish</td>
-                        <td><input type="number" name="entry" id="fishCost" value="3.25"></td>
-                    </tr>
-                    <tr>
-                        <td>Bacon</td>
-                        <td><input type="number" name="entry" id="baconCost" value="1.60"></td>
-                    </tr>
-                </table>
-                <p> Discount 40% off !!11!!1</p>
-                <input type="number" name="discount" id="discountAmnt" value="40">
-                <br><br>
-                <input type="button" value="Calculate" onclick = "totup2(this.form)">
-            </fieldset>
-         </form>
-         <p style = "font-size: 16;">Total Cost: <span id="total2"></span></p>
-
-         <!-- Rolling Dice - Task 12 -->
-         <h1>Roll the Dice!</h1>
-         
-         <img id="dice1" src="assets/dice1.png" alt="dice1">
-         <img id="dice2" src="assets/dice1.png" alt="dice2">
-         <br><br>
-
-         <button type="button" onclick="rollWithRndNum(document.getElementById('dice1')); rollWithRndNum(document.getElementById('dice2'));">Roll Dice</button>
-    </body>
+  <body>
+    <canvas id="gl-canvas" width="640" height="480"></canvas>
+  </body>
 </html>
