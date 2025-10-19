@@ -1,57 +1,45 @@
-
-var diceArray = [6]
-
-//init
-function initialise() 
+let x = 0;
+let count20 = 20;
+let count15 = 15;
+let total15 = 0;
+let list = "";
+function countingNum()
 {
-    diceArray[0] = new Image(); diceArray[0].src = "assets/dice1.png";
-    diceArray[1] = new Image(); diceArray[1].src = "assets/dice2.png";
-    diceArray[2] = new Image(); diceArray[2].src = "assets/dice3.png";
-    diceArray[3] = new Image(); diceArray[3].src = "assets/dice4.png";
-    diceArray[4] = new Image(); diceArray[4].src = "assets/dice5.png";
-    diceArray[5] = new Image(); diceArray[5].src = "assets/dice6.png";
+    x = 0;
+    list = "";
 
-    // ALERT
-    document.getElementById("printHere").innerHTML = "this works";
-    window.alert("Don't give up, Skeleton!");
-}
-
-//Task 12
-function rollWithRndNum(imgElement)
-{
-    console.log(diceArray[1].src)
-    let chosenDiceFace = Math.floor(Math.random() * 6);
-    imgElement.src = diceArray[chosenDiceFace].src;
-}
-
-//Task 6
-function totup(form)
-{
-    let total = 0;
-    for (let i = 0; i < form.elements.entry.length; i++) 
+    for (let i = 0; i < count20; i++) 
     {
-        total += parseFloat(form.elements.entry[i].value);
-    }
-    console.log(total)
-    total = total * (1-(form.elements.discount.value/100))
-    console.log(total)
+        x++;
+        
+        if (i != 19)
+        {list = list + parseInt(x) + ", ";}
+        else
+        {list = list + parseInt(x);}
 
-    document.getElementById("total").innerHTML = "£" + total.toFixed(2)
+        console.log(list);
+        document.getElementById("counting20").innerHTML = list;
+    }
 }
 
-//Task 7
-function totup2(form)
+function sumOfNum()
 {
-    let total = 0;
-    for (let i = 0; i < form.elements.entry.length; i++) 
+    x = 0;
+    list = "";
+
+    for (let i = 0; i < count15; i++) 
     {
-        total += parseFloat(form.elements.entry[i].value);
+        x++;
+        total15 += x;
+        
+        if (i != count15 - 1)
+        {list = list + parseInt(x) + " + ";}
+        else
+        {list = list + parseInt(x);}
+
+        console.log(list);
+        console.log(total15);
+        document.getElementById("sum15").innerHTML = list;
+        document.getElementById("total15").innerHTML = total15;
     }
-    console.log(total)
-    total = total * (1-(form.elements.discount.value/100))
-    console.log(total)
-
-    document.getElementById("total2").innerHTML = "£" + total.toFixed(2)
 }
-
-
