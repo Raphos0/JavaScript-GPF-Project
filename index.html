@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Week-3 Bootstrap Test</title>
+        <title>Dark Forge Games</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </head>
@@ -14,7 +14,10 @@
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme = "dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">
+                <img src="assets/DarkForgeGames.png" alt="" width="50" height="30" class="d-inline-block align-text-top">
+                Dark Forge Games
+            </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,10 +30,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">About</a>
                     </li>
 
 
@@ -49,24 +49,17 @@
         </div>
         </nav>
 
+        <br><br>
 
-        <div class = "container-fluid mt-3">
-            <div class = "row">
-                 <div class = "col-sm-4">
-                    <h3 style = "text-align: center;">Bloodborne</h3>
-                    <p>Introducing Bloodborne, action RPG from renowned Japanese developer FromSoftware, makers of the hit Demon's Souls and Dark Souls series, exclusively on the PlayStation®4 system. Face your fears as you search for answers in the ancient city of Yharnam, now cursed with a strange endemic illness spreading through the streets like wildfire. Danger, death and madness lurk around every corner of this dark and horrific world, and you must discover its darkest secrets in order to survive.</p>
-                 </div>
-                <div class = "col-sm-4">
-                    <h3 style = "text-align: center;">Nier: Automata</h3>
-                    <p>NieR: Automata tells the story of androids 2B, 9S and A2 and their battle to reclaim the machine-driven dystopia overrun by powerful machines.</p>
-                </div>
-                <div class = "col-sm-4">
-                    <h3 style = "text-align: center;">Lies of P</h3>
-                    <p>Lies of P is a thrilling soulslike that takes the story of Pinocchio, turns it on its head, and sets it against the darkly elegant backdrop of the Belle Epoque era.</p>
-                </div>
+        <div class="card" style="width: 18rem;">
+            <img src="assets/icon.jpg" class="card-img-top" alt="Profile Picture">
+            <div class="card-body">
+                <h5 class="card-title"  style = "font-family: 'Sovngarde'; font-size: 28px;">Sony’s Iron Grip on one of From Software’s most beloved IP: The reason and story behind it</h5>
+                <p class="card-text"  style = "font-family: 'Sovngarde'; font-size: 22px;">test</p>
+                <a href="BlogIPRights.html" class="btn btn-primary" >Read Blog</a>
             </div>
         </div>
-
+        
         <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -75,24 +68,27 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/bloodborne.jpg" class="d-block w-100" alt="Bloodborne">
+                <img src="assets/Carousel/GearsOfBlood.png" class="d-block w-100  h-100" alt="Gears of Blood">
                 <div class="carousel-caption d-none d-md-block">
-                    <h3 style="background-color: black;">Bloodborne</h3>
-                    <p style="background-color: black;">A game by From Software</p>
+                    <h2>Gears of Blood</h3>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/nierautomata.jpg" class="d-block w-100" alt="Nier: Automata">
+                <img src="assets/Carousel/SanctumArcana.png" class="d-block w-100 h-100" alt="Sanctum Arcana">
                 <div class="carousel-caption d-none d-md-block">
-                    <h3 style="background-color: black;">Nier: Automata</h3>
-                    <p style="background-color: black;">A game by Square Enix</p>
+                    <h2>Sanctum Arcana</h3>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/liesofp.jpg" class="d-block w-100" alt="Lies of P">
+                <img src="assets/Carousel/Tenement49.png" class="d-block w-100  h-100" alt="Tenement 49">
                 <div class="carousel-caption d-none d-md-block">
-                    <h3 style="background-color: black;">Lies of P</h3>
-                    <p style="background-color: black;">A game by Neowiz</p>
+                    <h2>Tenement 49</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/Carousel/UntitledGladiatorGame.jpg" class="d-block w-100  h-100" alt="Untitled Gladiator Game">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Untitled Gladiator Game</h3>
                 </div>
             </div>
         </div>
@@ -106,15 +102,6 @@
             </button>
         </div>
 
-        <div class="card" style="width: 18rem;">
-            <img src="assets/icon.jpg" class="card-img-top" alt="Profile Picture">
-            <div class="card-body">
-                <h5 class="card-title"  style = "font-family: 'Sovngarde'; font-size: 28px;">[Raphos]</h5>
-                <p class="card-text"  style = "font-family: 'Sovngarde'; font-size: 22px;">I am the bone of my sword. Steel is my body and fire my blood. I have created over a thousand blades. Unknown to death, nor known to life. I have withstood pain to create many weapons, but these hands will never hold anything. So, as I pray, Unlimited Blade Works.</p>
-                <a href="https://steamcommunity.com/id/6960617264646566676869/" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
