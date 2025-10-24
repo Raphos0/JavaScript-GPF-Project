@@ -4,11 +4,36 @@
         <title>Dark Forge Games: Home</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <style>
+            .dfg-title{
+                text-align: center; 
+                font-size: 180%; 
+                font-family:FleshandBlood; 
+                color:darkslateblue
+            }
+            .nav-text-std{
+                color: rgb(156, 144, 234); 
+                padding:15px
+            }
+            .nav-text-active{
+                color: rgb(95, 88, 142); 
+                font-weight: bold;
+                padding:15px
+            }
+            .blog-title{
+                font-family:'Times New Roman', Times, serif; 
+                font-size: 20px;
+            }
+            .blog-desc{
+                font-family: 'Times New Roman', Times, serif; 
+                font-size: 16px;
+            }
+        </style>
     </head>
     <body>
         <nav class="navbar fixed-top navbar-expand-lg" style="background: rgb(40, 35, 67);">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#" style="font-size: 160%; font-family:FleshandBlood; color:rgb(112, 99, 195);">
+                <a class="navbar-brand dfg-title" href="#">
                     <img src="assets/DarkForgeGames.png" alt="" width="50" height="55" class="d-inline-block align-text-middle">
                     Dark Forge Games
                 </a>
@@ -20,10 +45,13 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html" style="color: rgb(156, 144, 234); padding:15px">HOME</a>
+                        <a class="nav-link nav-text-active" aria-current="page" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="about.html" style="color: rgb(156, 144, 234); padding:15px">ABOUT</a>
+                        <a class="nav-link nav-text-std" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link nav-text-std" href="#">SCENES</a>
                         </li>
                     </ul>
                 </div>
@@ -44,18 +72,18 @@
                 <div class="card" style="width: 18rem; height:fit-content">
                     <img src="assets/Blogs/Thumbnail/IPdef.jpg" class="card-img-top" alt="Profile Picture">
                     <div class="card-body">
-                        <h5 class="card-title"  style = "font-family: 'David'; font-size: 20px;">Sony’s Iron Grip on one of From Software’s most beloved IP: The reason and story behind it</h5>
-                        <p class="card-text"  style = "font-family: 'David'; font-size: 16px;">Sony has had the ball in their court for over a decade in regards to one of From Software’s most beloved IPs: Bloodborne. Ever since the release of the game...</p>
-                        <a href="BlogIPRights.html" class="btn btn-primary" >Read Blog</a>
+                        <h5 class="card-title blog-title">Sony’s Iron Grip on one of From Software’s most beloved IP: The reason and story behind it</h5>
+                        <p class="card-text blog-desc">Sony has had the ball in their court for over a decade in regards to one of From Software’s most beloved IPs: Bloodborne. Ever since the release of the game...</p>
+                        <a href="BlogIPRights.html" class="btn btn-primary blog-desc">Read Blog</a>
                     </div>
                 </div>
                 
                 <div class="card" style="width: 18rem; height:fit-content">
                     <img src="assets/Blogs/Thumbnail/Freelance Pic.jpg" class="card-img-top" alt="Profile Picture">
                     <div class="card-body">
-                        <h5 class="card-title"  style = "font-family: 'David'; font-size: 20;">Freelancing in the Games Development Sphere: Is it worth it?</h5>
-                        <p class="card-text"  style = "font-family: 'David'; font-size: 16;">Freelancing in the Games Industry takes on two forms: being an “indie” games dev or taking short-term contracts for bigger companies. This post will cover the differences between...</p>
-                        <a href="BlogFreelancing.html" class="btn btn-primary" >Read Blog</a>
+                        <h5 class="card-title blog-title">Freelancing in the Games Development Sphere: Is it worth it?</h5>
+                        <p class="card-text blog-desc">Freelancing in the Games Industry takes on two forms: being an “indie” games dev or taking short-term contracts for bigger companies. This post will cover the differences between...</p>
+                        <a href="BlogFreelancing.html" class="btn btn-primary blog-desc">Read Blog</a>
                     </div>
                 </div>
             </div>
